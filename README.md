@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# FAQ Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The FAQ component is a simple and interactive way to display a list of frequently asked questions. It allows users to click on a question to reveal the answer, and click again to hide it. This behavior enhances user experience by keeping the UI clean and informative. User can toggle between dark and light mode.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Display a list of FAQs with questions and answers.
+- Clicking on a question reveals the answer.
+- Clicking again hides the answer.
+- The first answer is revealed by default.
+- Supports light and dark themes with a toggle button.
+- Toggle between dark and light mode
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The FAQ component is designed to fulfill the following requirements:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Receive List of Questions**: 
+   - The FAQ component should receive a list of questions and answers in a JavaScript object format.
+   - Each question from the object should be displayed with an adjacent chevron icon.
 
-### `npm test`
+2. **Toggle Answers**: 
+   - Clicking any question should reveal its corresponding answer.
+   - Clicking a question again should hide its answer.
+   - The first answer should be revealed by default.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To set up the project and use the FAQ component, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/nadia-mm/FAQ.git
+    cd FAQ
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Run the development server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm run dev
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Run the tests:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ```bash
+    npm run test
+    ```
 
-## Learn More
+## DEMO
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](https://github.com/nadia-mm/FAQ/blob/master/gif/demo.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Resources
+
+- [MaterialUI](https://mui.com/)
+- [Vite](https://vitejs.dev/)
