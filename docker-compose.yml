@@ -1,0 +1,20 @@
+version: '3.9'
+name: 'faq'
+
+services:
+  faq:
+    build: 
+      context: . 
+      dockerfile: Dockerfile
+    ports: 
+      - 5173:5173
+    volumes: 
+      - ./src:/app/src
+
+  test:  
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["npm", "test"]  
+    volumes:
+      - ./src:/app/src
